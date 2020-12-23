@@ -96,31 +96,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af509e', end
                 
 #header #top_my_box ul{margin: 0; padding: 0;}                         
 #header #top_my_box li{font-size: 0.937rem;
-                       padding: 15px 0;
+                       padding: 10px 0;
                        border-bottom: 1px solid #E6E6E6;
+                       
                        }
-                                                
+#header #top_my_box a {display: inline-block;
+                        width: 172px; 
+                        padding: 5px 0;}                                                                   
 #header #top_my_box li:last-child{border-bottom: none;} 
-#header #top_my_box li:after{}                                       
+#header #top_my_box .mybox_list a::after{content:''; display: inline-block;
+                              width: 10px; height: 15px;                              
+                              background-image:url(../images/arrow.png);
+                              float: right;
+                              margin-top: 3px;
+                             }
+                                       
 
 #nav4 {position: relative;}
 #nav4 .top_icon li{float: right;
                    width: 54px; height: 75px;
                    box-sizing: border-box;
                    }   
-#nav4 .top_icon .all_menu > span { display: inline-block; 
-                                   width: 24px; height: 4px;
-                                   background-color: #3D3D3D;}  
+#nav4 .top_icon .all_menu span {display: block; 
+                                width: 24px; height: 4px;
+                                margin-left: 15px;
+                                margin-bottom: 7px;
+                                background-color: #3D3D3D;}  
 
 #nav4 .top_icon .search a {display: inline-block;
                            background-image:url(../images/top_search.png); 
                            background-repeat: no-repeat;
-                          background-size: 24px 25px;
-                          background-position: center;
-                          width: 24px;
-                          height: 25px;
-                          padding: 25px 15px;
-                          }
+                           background-size: 24px 25px;
+                           background-position: center;
+                           width: 24px;
+                           height: 25px;
+                           padding: 25px 15px;
+                           }
 
 #nav4 .top_icon .my_page a {display: inline-block;
                            background-image:url(../images/top_my_off.png); 
@@ -167,10 +178,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af509e', end
   
   #nav4 .depth1{position: static;}   
   #nav4 .nav_box {position:absolute;/*top:calc(2.8rem + 25px);*/ top: 78px;left:0;width:100%;
-               background-color: rgba(91,37,80,0.7);z-index:96;
-               color: #fff;
-              display: none;
-              padding:10px 0;}
+                 background-color: rgba(91,37,80,0.7);z-index:96;
+                  color: #fff;
+                  display: none;
+                  padding:10px 0;}
   #nav4 .depth1>li:hover .nav_box{display: block;}               
   #nav4 .nav_box .depth2{width:100%; margin:0 auto;position: relative;
                          /*text-align: center;*/

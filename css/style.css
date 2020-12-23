@@ -152,14 +152,12 @@ h3 {font-size: 0.937rem; display: inline-block; color: #999;}
 
 #sec5 .inner:after{content:''; display: block; clear: both;}
 #sec5 h2,#sec5 h3{display: block;
-                  margin-left: 35px; }
+                  }
 #sec5 .inner h2{margin-top: 20px; margin-bottom: 30px;}
 #sec5 .inner h3{font-weight: normal;}
-#sec5 .sec5_title {width: 416px; float: left; 
-                   
-                   margin-right: 35px;}
-#sec5 .sec5_cont{width:calc(100% - 451px);}
-
+#sec5 .sec5_title {width: 416px; float: left; margin-right: 35px;}
+#sec5 .sec5_cont{width:calc(100% - 451px); float: right;}
+#sec5::after{content:''; display: block; clear: both;}
 
 /**************sec6*************/
 #sec6 .video {position: relative;}
@@ -173,7 +171,9 @@ h3 {font-size: 0.937rem; display: inline-block; color: #999;}
              left:calc(50% - 36.5px);
              top:calc(50% - 26px);
              background-image:url(../images/video_off.png);
+             cursor: pointer;
              }
+#sec6 button:hover{background-image:url(../images/video_on.png);}            
 #sec6 .inner h2{margin-top: 110px; margin-bottom: 30px;}
 #sec6 .inner h3{margin-left: 35px; font-weight: normal;}
 
