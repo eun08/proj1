@@ -5,7 +5,7 @@ h3 {font-size: 0.937rem; display: inline-block; color: #999;}
 
 
 
-#top_popup {position: relative; /**/}
+#top_popup {position: relative; }
 #top_popup img{width: 100%; min-width:1024px; margin: 0 auto;}
 #top_popup button{cursor: pointer; width: 50px; height: 50px;                 
                  background: none;}
@@ -148,8 +148,7 @@ h3 {font-size: 0.937rem; display: inline-block; color: #999;}
 
 
 /**************sec5*************/
-#sec5 .inner{margin-top:110px;
-             outline: 1px solid red;}
+#sec5 .inner{margin-top:110px;}
 
 #sec5 .inner:after{content:''; display: block; clear: both;}
 #sec5 h2,#sec5 h3{display: block;
@@ -184,12 +183,11 @@ h3 {font-size: 0.937rem; display: inline-block; color: #999;}
 #sec7 {margin-bottom: 120px;}
 #sec7 .inner h2{margin-top: 110px; margin-bottom: 30px;}
 #sec7 .inner h3{margin-left: 35px; font-weight: normal;}
-#sec7 .inner ul{margin: 0; padding: 0;
-                outline: 1px solid red;}
+#sec7 .inner ul{margin: 0; padding: 0;}
 #sec7 .inner li{display: inline-block;
                 width:calc((100% - 12px)/3);
                 height: 423px;                
-                border: 1px solid red;
+                
                 box-sizing: border-box;
                 position: relative;
                }
