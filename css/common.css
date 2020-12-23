@@ -24,12 +24,49 @@ input::placeholder, textarea::placeholder {
 button{outline:0}
 
 .sound_only{display: block;text-indent:-9999999999px;
-      height:0}
+            height:0}
 
 /****************메인화면, 서브화면 공통영역 ************************************/
 
 #wrap {width: 100%; min-width: 1024px; overflow: hidden;}
 .inner{min-width:1024px;max-width:1280px;margin:0 auto;}
+
+/*nav_pop*/ 
+#nav_pop {position: fixed; width: 100%; min-width: 1024px; height: 100%; overflow: auto;
+          z-index: 9999999999999;
+          display: none;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#af509e+0,eee2c8+100 */
+background: rgb(175,80,158); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(175,80,158,1) 0%, rgba(238,226,200,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(175,80,158,1) 0%,rgba(238,226,200,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(175,80,158,1) 0%,rgba(238,226,200,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af509e', endColorstr='#eee2c8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+          }
+
+#nav_pop .navpop_inner{width: 1024px; margin: 0 auto;}          
+#nav_pop #nav_logo{position: relative;
+                   margin-top: 100px;
+                   line-height: 2em;                    
+                   background-size: 222px 48px;
+                   background-image:url(../images/logo_wh.png);
+                   background-repeat: no-repeat;
+                   text-indent: -99999999999999px;
+                   }
+
+#nav_pop #nav_logo .nav_close{position: absolute; top: 0; right: 0;}
+#nav_pop .depth1 {color: #fff;
+                  margin-top: 100px;}
+#nav_pop .depth1 > li {width: 25%; float: left; margin-bottom: 150px;                    
+                       border-left: 0.5px solid rgba(255,255,255,0.5);
+                       box-sizing: border-box;}
+                       
+#nav_pop .depth1 > li > a {font-size: 1.5rem; margin-bottom: 40px; display: block;}
+#nav_pop .depth2 > li > a {font-size: 1.2rem; line-height: 2em;
+                           font-weight: lighter;}
+
+
+#header{}
 #header #logo{float: left; width:222px; height: 48px;
               background-image:url(../images/logo.png) ;
               margin-top: 15px;}
@@ -37,6 +74,36 @@ button{outline:0}
 #header .top_icon{float: right; 
                   width: 216px; height: 75px;
                   }
+#header #top_my_box{position: absolute;
+                    top: 78px; right: 0;
+                    width: 174px; height: 274px;
+                    padding: 20px 20px 0 20px;
+                    background-color: #fff;
+                    border: 1px solid #E6E6E6;
+                    z-index: 9999999;}
+#header #top_my_box > p{margin-bottom: 10px;
+                        font-size: 1.125rem;}
+#header #top_my_box > a{display: block;
+                        margin: 0 auto;
+                        margin-bottom: 20px;
+                        padding: 3px 0;
+                        width: 172px; 
+                        background-color: #AF509E;
+                        border-radius: 2em;
+                        color: #fff;
+                        text-align: center;
+                        cursor: pointer;}
+                
+#header #top_my_box ul{margin: 0; padding: 0;}                         
+#header #top_my_box li{font-size: 0.937rem;
+                       padding: 15px 0;
+                       border-bottom: 1px solid #E6E6E6;
+                       }
+                                                
+#header #top_my_box li:last-child{border-bottom: none;} 
+#header #top_my_box li:after{}                                       
+
+#nav4 {position: relative;}
 #nav4 .top_icon li{float: right;
                    width: 54px; height: 75px;
                    box-sizing: border-box;
@@ -100,7 +167,7 @@ button{outline:0}
   
   #nav4 .depth1{position: static;}   
   #nav4 .nav_box {position:absolute;/*top:calc(2.8rem + 25px);*/ top: 78px;left:0;width:100%;
-               background-color: rgba(91,37,80,0.5);z-index:96;
+               background-color: rgba(91,37,80,0.7);z-index:96;
                color: #fff;
               display: none;
               padding:10px 0;}
@@ -131,10 +198,24 @@ button{outline:0}
 
 /**footer*/
 #footer {width: 100%; height: 320px;
-         background-color: #EEE2C8;}
+         background-color: #EEE2C8;
+         padding-top: 30px;}
+#footer p{font-size: 0.875rem;
+                 line-height: 1.5em;}
+#footer .footer_top {
+                     margin-bottom: 50px;} 
+#footer .footer_top:after{content:''; display: block; clear: both;}
 
-#footer .footer_top {margin-top: 30px;
-                     outline: 1px solid red} 
+#footer .footer_top > a{float: left;}
 #footer .footer_top .sns {float: right;} 
 #footer .footer_top .sns img{width: 45px; height: 45px;
                              margin-left: 10px;}
+#footer .address {margin-bottom: 20px;}
+#footer .footer_link {margin-bottom: 20px;
+                      line-height: 1em;}
+#footer .footer_link a{display: inline-block;
+                       padding: 0 10px;
+                       border-right: 1px solid #3D3D3D;
+                       }
+#footer .footer_link a:first-child{padding-left: 0;}
+#footer .footer_link a:last-child{border-right: none;}
