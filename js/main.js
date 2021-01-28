@@ -1,4 +1,9 @@
 $(function(){
+    
+
+
+
+
     var slide;
     slide = setInterval(function(){
         $('.notice_list li:first-child').animate({
@@ -18,5 +23,21 @@ $(function(){
             
         });//animate end
     },1500);//setInterval end
+
+    
+    $('.close').click(function(){
+        $('#top_popup').hide();
+    });
+
+    
+    $('.my_page').hover(function(){
+        $('#top_my_box').slideDown();
+    },function(){
+        $('#top_my_box').slideUp();
+    });
+
+
+
+    
     
 })//jq end

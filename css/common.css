@@ -80,7 +80,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af509e', end
                     padding: 20px 20px 0 20px;
                     background-color: #fff;
                     border: 1px solid #E6E6E6;
-                    z-index: 9999999;}
+                    z-index: 9999999;
+                    display: none;}
 #header #top_my_box > p{margin-bottom: 10px;
                         font-size: 1.125rem;}
 #header #top_my_box > a{display: block;
@@ -109,7 +110,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af509e', end
                               background-image:url(../images/arrow.png);
                               float: right;
                               margin-top: 3px;
-                             }
+                              }
                                        
 
 #nav4 {position: relative;}
@@ -159,8 +160,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af509e', end
   #header .depth1{float: left;}
   #header .inner{position: relative;}/*여기까지 배경색으로 채울 것*/
   #nav4 {}
-  #nav4 .inner{position: relative;}
-
+  #nav4 .inner{position: relative; }
+  
   #nav4 .depth1 > li {float:left; padding-right: 20px;
                       }
   #nav4 .depth1 > li > a {display: block; 
