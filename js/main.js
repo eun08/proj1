@@ -29,12 +29,13 @@ $(function(){
         $('#top_popup').hide();
     });
 
-    
+    /*
     $('.my_page').hover(function(){
         $('#top_my_box').slideDown();
     },function(){
         $('#top_my_box').slideUp();
     });
+    */
 
 
 
